@@ -3,16 +3,28 @@
     <style>
       @keyframes v {
         0% {
-          background: url('https://i.pinimg.com/originals/6d/f0/18/6df0180268661a7b2cd0488dafaa7257.gif')
+          background: var(--v1);
+        }
+        45% {
+          background: var(--v1);
         }
         50% {
-          background: url('https://giffiles.alphacoders.com/132/132778.gif')
+          background: var(--v2);
+        }
+        75% {
+          background: var(--v2);
+        }
+        80% {
+          background: var(--v3);
         }
         100% {
-          background: url('https://gifimage.net/wp-content/uploads/2017/11/felix-argyle-gif-8.gif')
+          background: var(--v3);
         }
       }
       body {
+        --v1: url('https://i.pinimg.com/originals/6d/f0/18/6df0180268661a7b2cd0488dafaa7257.gif');
+        --v2: url('https://giffiles.alphacoders.com/132/132778.gif');
+        --v3: url('https://gifimage.net/wp-content/uploads/2017/11/felix-argyle-gif-8.gif');
         position: fixed;
         left:0;top:0;width:100vw;height:100vh;
         background: #000;
@@ -25,7 +37,7 @@
         backround: #000;
       }
     </style>
-  </head>
+  </head>;
   <body>
   </body>
 </html>
